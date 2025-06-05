@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closures???</title>
+</head>
+<body>
+    <script>
+        alert(x);
+        var x = 10;
+        for(let i = 0;i < 10;i++){
+            let a = 10;
+
+        }
+        function factor(times){
+            function multiplier(num){
+                return num * times;
+            }
+            return multiplier;
+        } 
+        let timesTwo = factor(2);
+        let timesThree = factor(3);
+        let ans = timesThree(5);
+        alert(ans);
+    </script>
+</body>
+</html>
